@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cientifica</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+    
+<body>
+    <div id="calculadora">
+        <input type="text" id="display" disabled>    
+        <input type="button" value="C" onclick="limpiar()">
+        <br>        
+        <input type="button" value="7" onclick="agregar('7')">
+        <input type="button" value="8" onclick="agregar('8')">
+        <input type="button" value="9" onclick="agregar('9')">
+        <input type="button" value="/" onclick="agregar('/')">              
+        <br/>
+        <input type="button" value="4" onclick="agregar('4')">
+        <input type="button" value="5" onclick="agregar('5')">
+        <input type="button" value="6" onclick="agregar('6')">
+        <input type="button" value="*" onclick="agregar('*')">
+        <br>
+        <input type="button" value="1" onclick="agregar('1')">
+        <input type="button" value="2" onclick="agregar('2')">
+        <input type="button" value="3" onclick="agregar('3')">
+        <input type="button" value="-" onclick="agregar('-')">
+        <br>
+        <input type="button" value="0" onclick="agregar('0')">
+        <input type="button" value="." onclick="agregar('.')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="+" onclick="agregar('+')">
+        <br>
+        <input type="button" value="sin" onclick="calculateTrig('sin')">
+        <input type="button" value="cos" onclick="calculateTrig('cos')">
+        <input type="button" value="tan" onclick="calculateTrig('tan')">
+        <input type="button" value="sqrt" onclick="calculateSqrt()">
+    </div>
+</body>
+</html>
